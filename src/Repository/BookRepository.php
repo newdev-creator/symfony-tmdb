@@ -15,4 +15,14 @@ class BookRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Book::class);
     }
+
+    public function findAllWithReviews(): array
+    {
+        return $this->createQueryBuilder('b')
+            ->leftJoin('b.reviews', 'r')
+            ->addSelect('r')
+            ->orderBy('b.title', 'ASC')
+            ->getQuery()
+            ->getResult();
+    }
 }
