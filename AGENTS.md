@@ -16,6 +16,11 @@ If you can't ask (no interactive channel), state the assumption you're making an
 pick the smallest option (e.g. no persistence layer) rather than scaffolding a
 full stack nobody asked for.
 
+## FrankenPHP/Docker
+
+This project use FrankenPHP and Docker.
+See the `Makefile` for available commands.
+
 ## Adding features: Flex, not hand-wiring
 
 Install new capabilities with `composer require <package>` (e.g. `symfony/lock`,
