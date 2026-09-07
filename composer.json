@@ -18,6 +18,7 @@
         "symfony/framework-bundle": "8.1.*",
         "symfony/maker-bundle": "^1.67",
         "symfony/runtime": "8.1.*",
+        "symfony/twig-bundle": "8.1.*",
         "symfony/validator": "8.1.*",
         "symfony/yaml": "8.1.*"
     },

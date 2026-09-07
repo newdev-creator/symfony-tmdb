@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Book Detail{% endblock %}
+
+{% block body %}
+    <h1>{{ book.title }}</h1>
+    <ul>
+        <li><strong>Author:</strong> {{ book.author }}</li>
+        <li><strong>ISBN:</strong> {{ book.isbn }}</li>
+        <li><strong>Rating:</strong> {{ book.rating }}</li>
+        <li><strong>Status:</strong> {{ book.status }}</li>
+        <li><strong>Created at:</strong> {{ book.createdAt ? book.createdAt.format('Y-m-d H:i:s') : 'N/A' }}</li>
+    </ul>
+    <a href="{{ path('app_book_index') }}">Back to list</a>
+{% endblock %}
