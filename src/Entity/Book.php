@@ -9,7 +9,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: BookRepository::class)]
-#[UniqueEntity('isbn')]
+#[UniqueEntity(fields: ['isbn'])]
 class Book
 {
     #[ORM\Id]
@@ -34,7 +34,7 @@ class Book
     private ?int $rating = null;
 
     #[ORM\Column(length: 20)]
-    #[Assert\Choice(['à lire', 'en cours', 'lu'])]
+    #[Assert\Choice(choices: ['à lire', 'en cours', 'lu'])]
     private ?string $status = 'à lire';
 
     #[ORM\Column]

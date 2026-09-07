@@ -16,6 +16,10 @@ If you can't ask (no interactive channel), state the assumption you're making an
 pick the smallest option (e.g. no persistence layer) rather than scaffolding a
 full stack nobody asked for.
 
+## Styling and design
+
+This project uses [Pico CSS](https://picocss.com/).
+
 ## FrankenPHP/Docker
 
 This project use FrankenPHP and Docker.

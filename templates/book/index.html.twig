@@ -3,7 +3,10 @@
 {% block title %}Books{% endblock %}
 
 {% block body %}
-    <h1>Books</h1>
+    <h1 style="display: flex; justify-content: space-between; align-items: center;">
+        Books
+        <a href="{{ path('app_book_new') }}" role="button">Add new book</a>
+    </h1>
     <table>
         <thead>
             <tr>
